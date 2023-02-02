@@ -3,6 +3,4 @@
 Auf unserer Website können Sie ihre eigene Schokolade designen.
 
 ## Autoren
-Mara und Johanna
-
-<Dieses Projekt erstellen wir in der Schule>
+Mara und Johanna und Kaka
