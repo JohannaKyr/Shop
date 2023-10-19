@@ -1,9 +1,4 @@
-<html>
-
-<body>
-
-<p style=”font-family: Arial; font-size: 30px; color: blue;”>Hallo Welt!</p>
-
-</body>
-
-</html>
+#balken {
+    padding: 20px;
+    background-color: pink;
+}
