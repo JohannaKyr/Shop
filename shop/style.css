@@ -2,3 +2,11 @@
     padding: 20px;
     background-color: rgb(221, 206, 178);
 }
+@font-face {
+    font-family: ;
+    font-style: normal;
+    font-weight: 200;
+    src: local('Open-Sans'), 
+    local('Open-Sans'), 
+    url(#{$wGlobalProjectPath}/wGlobal/layout/webfonts/opensans/OpenSans-Regular.ttf) format('truetype');
+}
