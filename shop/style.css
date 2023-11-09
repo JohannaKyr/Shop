@@ -15,8 +15,13 @@ body {
 
        .container{
         display: flex
-        justify-content: center; /* HORIZONTAL ZENTRIEREN */
+        justify-content; center; /* HORIZONTAL ZENTRIEREN */
         align-items: center; /* Optional: Vertikal zentrieren */
+        height: 100vh; /* 100% der Bildschirmhöhe */
+       }
+       
+       .content {
+        text-align: center; /*Optional: Zentriere den Text innerhalb des Inhalts */
        }
        .photo-container {
         display: flex;
