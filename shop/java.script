@@ -1,3 +1,4 @@
+{
 document.addEventListener('DOMContentLoaded', function () {
  const cartList = document.getElementById('cart-list');
  const totalPrice = document.getElementById('total-price');
@@ -37,3 +38,4 @@ document.addEventListener('DOMContentLoaded', function () {
    document.body.appendChild(productItem);
  });
 });
+} 
