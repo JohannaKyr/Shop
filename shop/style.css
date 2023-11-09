@@ -7,5 +7,18 @@ body {
     font-family: 'Playpen Sans', cursive;
     font-style: normal;
     font-weight: 200;
- 
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+       }
+       .flex-container {
+        display: flex;
+       }
+       .box {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin: 10px;
+       }
 }

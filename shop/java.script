@@ -1,0 +1,39 @@
+document.addEventListener('DOMContentLoaded', function () {
+ const cartList = document.getElementById('cart-list');
+ const totalPrice = document.getElementById('total-price');
+ // Beispielprodukte
+ const products = [
+   { id: 1, name: 'Produkt 1', price: 10 },
+   { id: 2, name: 'Produkt 2', price: 20 },
+   { id: 3, name: 'Produkt 3', price: 30 }
+ ];
+ // Warenkorb
+ const cart = [];
+ // Funktion zum Hinzufügen eines Produkts zum Warenkorb
+ function addToCart(product) {
+   cart.push(product);
+   updateCart();
+ }
+ // Funktion zum Aktualisieren des Warenkorbs
+ function updateCart() {
+   cartList.innerHTML = '';
+   let total = 0;
+   cart.forEach(item => {
+     const listItem = document.createElement('li');
+     listItem.textContent = `${item.name} - ${item.price} €`;
+     cartList.appendChild(listItem);
+     total += item.price;
+   });
+   totalPrice.textContent = `Gesamtpreis: ${total} €`;
+ }
+ // Produkte in die HTML-Datei einfügen
+ products.forEach(product => {
+   const addButton = document.createElement('button');
+   addButton.textContent = `In den Warenkorb (${product.name})`;
+   addButton.addEventListener('click', () => addToCart(product));
+   const productItem = document.createElement('div');
+   productItem.appendChild(document.createTextNode(`${product.name} - ${product.price} €`));
+   productItem.appendChild(addButton);
+   document.body.appendChild(productItem);
+ });
+});
