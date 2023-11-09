@@ -16,7 +16,7 @@ body {
        .container{
         display: flex
         justify-content: center; /* HORIZONTAL ZENTRIEREN */
-        align-items: center; /* O
+        align-items: center; /* Optional: Vertikal zentrieren */
        }
        .photo-container {
         display: flex;
