@@ -15,14 +15,11 @@ body {
 
        .container{
         display: flex
-        justify-content; center; /* HORIZONTAL ZENTRIEREN */
-        align-items: center; /* Optional: Vertikal zentrieren */
-        height: 100vh; /* 100% der Bildschirmhöhe */
+        justify-content; center: /* HORIZONTAL ZENTRIEREN */
+        align-items; center: /* Optional: Vertikal zentrieren */
+        height; 100vh; /* 100% der Bildschirmhöhe */
        }
        
-       .content {
-        text-align: center; /*Optional: Zentriere den Text innerhalb des Inhalts */
-       }
        .photo-container {
         display: flex;
        }
@@ -31,4 +28,6 @@ body {
         height: auto;
         margin: 5px;
        }
-}
+      .content {
+    text-align: center; /*Optional: Zentriere den Text innerhalb des Inhalts */
+   }
