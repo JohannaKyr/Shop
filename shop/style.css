@@ -15,7 +15,8 @@ body {
 
        .container{
         display: flex
-        justify-content: center; /*HORIZONTAL ZENTRIEREN 
+        justify-content: center; /* HORIZONTAL ZENTRIEREN */
+        align-items: center; /* O
        }
        .photo-container {
         display: flex;
