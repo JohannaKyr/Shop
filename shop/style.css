@@ -9,26 +9,16 @@ body {
     font-weight: 200;
 
 body {
-
-  margin: 0;
-
-  font-family: Arial, sans-serif;
-
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh; /* 100% der Bildschirmhöhe */
-  padding: 20px;
-  background-color: #b95b5b;
-}
-
-.box {
-  flex: 1;
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin: 10px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+       }
+       .photo-container {
+        display: flex;
+       }
+       .photo-container img {
+        max-width: 100%;
+        height: auto;
+        margin: 5px;
+       }
 }
 }
