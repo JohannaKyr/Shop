@@ -7,18 +7,29 @@ body {
     font-family: 'Playpen Sans', cursive;
     font-style: normal;
     font-weight: 200;
-    
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-       }
-       .flex-container {
-        display: flex;
-       }
-       .box {
-        flex: 1;
-        padding: 20px;
-        border: 1px solid #ccc;
-        margin: 10px;
-       }
+
+  [08:15] Köyer, Johanna
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* 100% der Bildschirmhöhe */
+  padding: 20px;
+  background-color: #b95b5b;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
 }
