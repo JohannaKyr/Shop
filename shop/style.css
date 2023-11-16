@@ -1,10 +1,29 @@
-
-
 body {
         margin: 0;
         font-family: Arial, sans-serif;
        }
 
+.image-container {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+image_conatiner img {
+   width: 100%;
+   height: auto;
+   transition: transform 0.5s;
+  
+}
+
+overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba
+}
 #balken {
     padding: 20px;
     background-color: rgb(221, 206, 178);
