@@ -1,23 +1,28 @@
-#balken {
-    padding: 20px;
-    background-color: rgb(221, 206, 178);
-    text-align: center;
-}
-body {
-    font-family: 'Playpen Sans', cursive;
-    font-style: normal;
-    font-weight: 200;
+
 
 body {
         margin: 0;
         font-family: Arial, sans-serif;
        }
 
+#balken {
+    padding: 20px;
+    background-color: rgb(221, 206, 178);
+    text-align: center;
+    font-family: 'Playpen Sans', cursive;
+    font-style: normal;
+    font-weight: 200;
+}
+
        .container{
-        display: flex
-        justify-content; center: /* HORIZONTAL ZENTRIEREN */
-        align-items; center: /* Optional: Vertikal zentrieren */
-        height; 100vh; /* 100% der Bildschirmhöhe */
+        display: flex;
+        justify-content:center; /* HORIZONTAL ZENTRIEREN */
+        align-items: center; /* Optional: Vertikal zentrieren */
+        height: 100vh; /* 100% der Bildschirmhöhe */
+       }
+
+       .box{
+        display: none;
        }
        
        .photo-container {
@@ -29,5 +34,5 @@ body {
         margin: 5px;
        }
       .content {
-    text-align: center; /*Optional: Zentriere den Text innerhalb des Inhalts */
-   }
+        text-align: center; /*Optional: Zentriere den Text innerhalb des Inhalts */
+        }
