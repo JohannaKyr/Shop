@@ -1,41 +1,30 @@
-{
-document.addEventListener('DOMContentLoaded', function () {
- const cartList = document.getElementById('cart-list');
- const totalPrice = document.getElementById('total-price');
- 
- const products = [
-   { id: 1, name: 'Produkt 1', price: 10 },
-   { id: 2, name: 'Produkt 2', price: 20 },
-   { id: 3, name: 'Produkt 3', price: 30 }
- ];
 
- const cart = [];
 
- function addToCart(product) {
-   cart.push(product);
-   updateCart();
- }
-
- function updateCart() {
-   cartList.innerHTML = '';
-   let total = 0;
+// Funktion zum Artikel hinzufügen
+function addToCart(item) {
+   let cart = JSON.parse(localStorage.getItem('cart')) || [];
+   cart.push(item);
+   localStorage.setItem('cart', JSON.stringify(cart));
+   displayCart();
+}
+// Funktion zum Warenkorb anzeigen
+function displayCart() {
+   let cart = JSON.parse(localStorage.getItem('cart')) || [];
+   let cartItems = document.getElementById('cart-items');
+   cartItems.innerHTML = '';
    cart.forEach(item => {
-     const listItem = document.createElement('li');
-     listItem.textContent = `${item.name} - ${item.price} €`;
-     cartList.appendChild(listItem);
-     total += item.price;
+       let li = document.createElement('li');
+       li.textContent = item;
+       cartItems.appendChild(li);
    });
-   totalPrice.textContent = `Gesamtpreis: ${total} €`;
- }
-
- products.forEach(product => {
-   const addButton = document.createElement('button');
-   addButton.textContent = `In den Warenkorb (${product.name})`;
-   addButton.addEventListener('click', () => addToCart(product));
-   const productItem = document.createElement('div');
-   productItem.appendChild(document.createTextNode(`${product.name} - ${product.price} €`));
-   productItem.appendChild(addButton);
-   document.body.appendChild(productItem);
- });
-});
-} 
+}
+// Funktion zum Checkout (kann entsprechend angepasst werden)
+function checkout() {
+   // Hier können Sie weitere Aktionen für den Checkout durchführen
+   alert('Checkout erfolgreich!');
+   // Optional: Warenkorb leeren
+   localStorage.removeItem('cart');
+   displayCart();
+}
+// Warenkorb beim Laden der Seite anzeigen
+window.onload = displayCart;
