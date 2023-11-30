@@ -18,13 +18,26 @@ function displayCart() {
        cartItems.appendChild(li);
    });
 }
-// Funktion zum Checkout (kann entsprechend angepasst werden)
+// Funktion zum Checkout 
 function checkout() {
    // Hier können Sie weitere Aktionen für den Checkout durchführen
    alert('Checkout erfolgreich!');
    // Optional: Warenkorb leeren
    localStorage.removeItem('cart');
    displayCart();
+}
+
+//Funktion zum Warenkorb leeren
+function clearCart() {
+    localStorage.removeItem ('cart');
+}
+// Funktion zum Laden des Warenkorbs aus dem Local Storage
+function getCart() {
+   return JSON.parse(localStorage.getItem('cart')) || [];
+}
+// Funktion zum Speichern des Warenkorbs im Local Storage
+function saveCart(cart) {
+   localStorage.setItem('cart', JSON.stringify(cart));
 }
 // Warenkorb beim Laden der Seite anzeigen
 window.onload = displayCart;

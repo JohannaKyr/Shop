@@ -13,7 +13,6 @@ image_conatiner img {
    width: 100%;
    height: auto;
    transition: transform 0.5s;
-  
 }
 
 overlay {
@@ -35,9 +34,9 @@ overlay {
 
        .container{
         display: flex;
-        justify-content:center; /* HORIZONTAL ZENTRIEREN */
-        align-items: center; /* Optional: Vertikal zentrieren */
-        height: 100vh; /* 100% der Bildschirmhöhe */
+        justify-content:center; 
+        align-items: center; 
+        height: 100vh; 
        }
 
        .box{
@@ -53,5 +52,30 @@ overlay {
         margin: 5px;
        }
       .content {
-        text-align: center; /*Optional: Zentriere den Text innerhalb des Inhalts */
+        text-align: center; 
         }
+
+    .image-container {
+      position: relative;
+      width: 300px; 
+      height: 200px; 
+      overflow: hidden;
+    }
+    .normal-image,
+    .hover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .hover-image {
+      opacity: 0;
+    }
+    .image-container:hover .normal-image {
+      opacity: 0;
+     }
+    .image-container:hover .hover-image {
+      opacity: 1;
+    }
