@@ -28,14 +28,27 @@
           <a href="lampen.html">
             <img src="https://m.media-amazon.com/images/I/71MfLBOj2dS._AC_UF350,350_QL80_.jpg"  alt="Lampe" width="600" height="500">
           </a>
-        </div>
-    </div>
 
+          <style>
+            .image-container {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .image-container:hover img {
+            opacity: 0.7;
+        } 
+            </style>
+        </div>
+     </div>
+    
+      
     <div class="image-container">
       <a href="ziel-seite.html">
       <img src="https://www.lights4fun.de/cdn/shop/products/CA20034RC_9er-Set-TruGlow-LED-Kerzen-Sommer.jpg?v=1698667316&width=1280" alt="Normal Image" class="normal-image" />
       <img src="https://m.media-amazon.com/images/I/71MfLBOj2dS._AC_UF350,350_QL80_.jpg" alt="Hover Image" class="hover-image" />
       </a>
+
     </div>
  
 <div class="cart">
@@ -45,7 +58,12 @@
 <script src="script.js"></script>
 
 </ul>
+
+<ul id="cart-items">
+    <button onclick="cart()">cart</button>
 <p id="total-price">Gesamtpreis: 0 €</p>
+</ul>
+
 </div>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
