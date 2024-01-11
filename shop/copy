@@ -1,0 +1,72 @@
+<body> 
+    <main>
+      <section>
+        <h2>Kerzen</h2>
+        <ul>
+          <li>
+            <img src= main>
+              <section>
+                <h2>Kerze 1</h2>
+                <ul>
+                  <li>
+                    <img src="https://aestheticliving.de/cdn/shop/products/3_47b9378f-e042-4395-b8b5-f9bd587c351c_1800x1800.jpg?v=1639303927" alt="Netz-Lampe">
+
+                    <h3></h3>
+                    <p>Preis: <span class='betrag'>25,00</span>€</p>
+                    <button class="buy-button" data-product-id="1">Kaufen</button>
+                  </li>
+                  <li>
+                    <img src="https://www.hagengrote.de/$WS/hg1ht/websale8_shop-hg1ht/produkte/medien/bilder/gross/Dekorative-Lampe-in-der-Trendfarbe-Gold-_-272hu04.webp" alt="Metallische Lampe">
+                    <h3></h3>
+                    <p>Preis: <span class='betrag'>35,00</span>€</p>
+                    <button class="buy-button" data-product-id="2">Kaufen</button>
+                  </li>
+                  <li>
+                    <img src="https://m.media-amazon.com/images/I/7172VQx5jOL._AC_UF894,1000_QL80_.jpg" alt="Glas Lampe"
+                    <h3></h3>
+                    <p>Preis: <span class='betrag'>45,00</span>€</p>
+                    <button class="buy-button" data-product-id="3">Kaufen</button>
+                  </li>
+                </ul>
+              </section>
+            </main> 
+          
+      </section>
+    </main>
+  </body>
+
+  <body> 
+    <main>
+      <section>
+        <h2>Kerzen</h2>
+        <ul>
+          <li>
+            <img src= main>
+              <section>
+                <h2>Kerze 1</h2>
+                <ul>
+                  <li>
+                    <img src="https://i.etsystatic.com/15614105/r/il/39b898/3623090934/il_570xN.3623090934_8nbn.jpg" alt="Bubble-Kerze">
+                    <h3></h3>
+                    <p>Preis: <span class='betrag'>2,50</span>€</p>
+                    <button class="buy-button" data-product-id="1">Kaufen</button>
+                  </li>
+                  <li>
+                    <img src="https://i.etsystatic.com/27301387/r/il/8d9651/3362741466/il_fullxfull.3362741466_mnvb.jpg" alt="U-Förmige Kerze">
+                    <h3></h3>
+                    <p>Preis: <span class='betrag'>5,50</span>€</p>
+                    <button class="buy-button" data-product-id="2">Kaufen</button>
+                  </li>
+                  <li>
+                    <img src="https://i.etsystatic.com/15614105/r/il/47f5eb/3405186043/il_570xN.3405186043_442v.jpg" alt="wellenförmige Kerze">
+                    <h3></h3>
+                    <p>Preis: <span class='betrag'>4,75</span>€</p>
+                    <button class="buy-button" data-product-id="3">Kaufen</button>
+                  </li>
+                </ul>
+              </section>
+            </main> 
+          
+      </section>
+    </main>
+  </body>
