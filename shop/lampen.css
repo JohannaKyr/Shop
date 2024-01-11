@@ -30,3 +30,10 @@ font-weight: 200;
   .content {
     text-align: center; /*Optional: Zentriere den Text innerhalb des Inhalts */
     }
+
+    
+    .produkt{
+      flex: 1;
+      padding: 10px;
+      margin-top: 20px;
+    }
